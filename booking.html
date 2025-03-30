@@ -20,12 +20,42 @@
         </ul>
     </nav>
 
-    <section class="hero-home">
-        <h1 class='taste'>Welcome to Taniti</h1>
-        <p class='taste'>Join us as we enjoy the beach, take a break, and create memories that will never go away.</p>
-        <button class="cta-button">Book Now</button>
-    </section>
+    <header class="hero-lodging">
+        <h1 class = "taste">Book Your Stay</h1>
+        <p class = "taste">Plan your dream getaway to Taniti with ease.</p>
+    </header>
 
+    <section class="booking-form-section">
+        <div class="container">
+            <h2>Reservation Form</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="accommodation">Accommodation Type:</label>
+                <select id="accommodation" name="accommodation">
+                    <option value="hostel">Hostel</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="resort">Resort</option>
+                    <option value="bnb">Bed & Breakfast</option>
+                </select>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" >
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" >
+
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests" rows="4"></textarea>
+
+                <button type = button class="cta-button" onclick = "window.location.href = `./congrats.html`" >Book Now</button>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
